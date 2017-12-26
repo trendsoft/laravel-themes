@@ -1,0 +1,32 @@
+{
+  "name": "trendsoft/laravel-themes",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "theme",
+    "trendsoft",
+    "php"
+  ],
+  "description": "基于trendsoft/themes的laravel主题管理",
+  "homepage": "http://www.trendsoft.org",
+  "authors": [
+    {
+      "name": "jabber",
+      "email": "2898117012@qq.com",
+      "homepage": "http://jabber.oppophp.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "wiki": "https://github.com/trendsoft/laravel-themes/wiki",
+    "issues": "https://github.com/trendsoft/laravel-themes/issues"
+  },
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5"
+  },
+  "autoload": {},
+  "autoload-dev": {}
+}
