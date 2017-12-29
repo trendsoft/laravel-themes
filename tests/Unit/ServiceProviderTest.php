@@ -3,8 +3,9 @@
 
 namespace Tests\Unit;
 
+use Tests\TestCase;
 
-class ServiceProviderTest
+class ServiceProviderTest extends TestCase
 {
-
+    
 }

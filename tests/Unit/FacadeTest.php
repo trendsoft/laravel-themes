@@ -3,7 +3,9 @@
 
 namespace Tests\Unit;
 
-class FacadeTest
-{
+use Tests\TestCase;
 
+class FacadeTest extends TestCase
+{
+    
 }
