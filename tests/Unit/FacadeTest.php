@@ -3,10 +3,13 @@
 
 namespace Tests\Unit;
 
+use LaravelTheme\Theme;
 use Tests\TestCase;
 
-class FacadeTest extends TestCase {
-    public function testFacadeIsAvailable() {
-        $this->assertTrue($this->app->isAlias('Theme'));
+class FacadeTest extends TestCase
+{
+    public function testFacadeIsAvailable()
+    {
+        $this->assertCount(0, Theme::all());
     }
 }

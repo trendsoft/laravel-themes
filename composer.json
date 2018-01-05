@@ -46,7 +46,7 @@
         "LaravelTheme\\ServiceProvider"
       ],
       "aliases": {
-        "Theme": "LaravelTheme\\Facade"
+        "Theme": "LaravelTheme\\Theme"
       }
     }
   }
