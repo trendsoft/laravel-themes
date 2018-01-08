@@ -3,6 +3,7 @@
 namespace LaravelTheme;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
+use LaravelTheme\Console\Command\ThemeGenerator;
 use Themes\Theme;
 
 class ServiceProvider extends LaravelServiceProvider
@@ -29,6 +30,12 @@ class ServiceProvider extends LaravelServiceProvider
         $this->app->singleton(Theme::class, function () {
             return new Theme(config('theme'));
         });
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                ThemeGenerator::class
+            ]);
+        }
     }
 
     /**
