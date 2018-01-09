@@ -51,6 +51,13 @@ class TestCase extends BaseTestCase
      */
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('theme', []);
+        $app['config']->set('theme', [
+            'active' => 'default',
+            'paths'  => [
+                'absolute' => __DIR__.'/themes',
+                'base'     => 'themes',
+                'assets'   => 'assets'
+            ]
+        ]);
     }
 }

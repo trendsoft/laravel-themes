@@ -13,6 +13,6 @@ class FacadeTest extends TestCase
      */
     public function testFacadeIsAvailable()
     {
-        $this->assertCount(0, Theme::all());
+        $this->assertEquals('default', Theme::getCurrent());
     }
 }

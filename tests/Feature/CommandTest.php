@@ -10,6 +10,9 @@ class CommandTest extends TestCase
 {
     public function testMakeTheme()
     {
-        $this->assertEmpty($this->artisan('make:theme', ['name' => 'default']));
+        $name = md5(uniqid(microtime(true), true));
+        $this->assertEmpty($this->artisan('make:theme', ['slug' => $name]));
+        $this->assertTrue(file_exists(config('theme.paths.absolute').'/'.$name));
+        $this->assertTrue(file_exists(config('theme.paths.absolute').'/'.$name.'/theme.json'));
     }
 }
